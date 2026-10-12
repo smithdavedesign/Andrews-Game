@@ -74,8 +74,6 @@ int main(int argc, char **argv)
   
   //store tail Cords into emptail
   Cell temptail; 
-  int previousTailx = temptail.x;
-  int previousTaily = temptail.y;
 
   refresh();  
 
