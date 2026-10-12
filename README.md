@@ -29,4 +29,4 @@ The quest runs in the terminal: answer the prompts, then play the levels. Hangma
 
 ## History
 
-Cleaned up in 2026: committed build output (`.o`, `.x`, `a.out`) and run-time logs were removed and are now ignored, and this README was added. Two standalone builds didn't compile with a current compiler, and both are fixed. Connect 4 had a `main()` with no return type and declared its win counters twice, and the worm screen sent `std::cout` to itself instead of `std::endl`. Otherwise the code is as written in 2018.
+Cleaned up in 2026: committed build output (`.o`, `.x`, `a.out`) and run-time logs were removed and are now ignored, and this README was added. Two standalone builds didn't compile with a current compiler, and both are fixed. Connect 4 had a `main()` with no return type and declared its win counters twice, and the worm screen sent `std::cout` to itself instead of `std::endl`. Four functions also fell off the end without returning a value (`RunWorm`, `connect_Game`, `storeGrowth` and an unused stub). Otherwise the code is as written in 2018.

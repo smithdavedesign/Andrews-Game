@@ -15,7 +15,7 @@ class Worm
   bool isEmpty();
   bool isFull();
 
-  Cell storeGrowth(int randomMunchieSize);
+  void storeGrowth(int randomMunchieSize);
   Cell moveSnake(int row, int column);
   bool outOfBounds(int x, int y, int head);
   int size();

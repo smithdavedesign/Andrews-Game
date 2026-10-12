@@ -57,6 +57,7 @@ bool Connect::connect_Game()
 	  playing = false;
 	}
     }
+  return true;
 }
 
 

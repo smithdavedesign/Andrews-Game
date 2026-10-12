@@ -43,7 +43,7 @@ bool Hangman::RunHangman()
 	{ 
 	  found=false;
 	  HangManDisplaygame (misses);
-	  for (int i=0; i<blanks.size();i++){
+	  for (int i=0; i<(int) blanks.size();i++){
 	    cout<<blanks[i]<<' ';
 	  }  
 	  cout<<endl;
@@ -53,7 +53,7 @@ bool Hangman::RunHangman()
 	  cin>> guess;
 	  guess=toupper (guess);
 	
-	  for(int i=0;i<word.size();i++ ) 
+	  for(int i=0;i<(int) word.size();i++ ) 
 	    {
 	      if (word[i] == toupper(guess))
 		{
@@ -96,7 +96,7 @@ then ask if they want to play again
 
 string Hangman::HangManToUpper(string s){
   string r=s;
-  for (int i=0; i<s.size(); i++) 
+  for (int i=0; i<(int) s.size(); i++) 
     r[i]= toupper(s[i]);
   return r;  
 }

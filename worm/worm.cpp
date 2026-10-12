@@ -92,7 +92,7 @@ Cell Worm::moveSnake(int row, int column)
   
 }
 
-Cell Worm::storeGrowth(int randomMunchieSize)
+void Worm::storeGrowth(int randomMunchieSize)
 {
   addSize += randomMunchieSize; 	
 }
@@ -104,9 +104,7 @@ bool Worm::isGrowing()
 
 bool Worm::outOfBounds(int row, int column, int head)
 {
-
-
-
+  return false;  // never written or called; kept so the header still matches
 }
 
 void Worm::print_Screen()

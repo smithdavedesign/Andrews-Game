@@ -96,7 +96,7 @@ void Game::game_Map()
 {
 
   //I choose an array for my gameMap
-  for(int i = 0; i < gameMap.size();/*should be are global*/ i++)
+  for(int i = 0; i < (int) gameMap.size();/*should be are global*/ i++)
     {
       if(i == levelCounter)
 	{

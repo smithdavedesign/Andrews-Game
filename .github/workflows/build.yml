@@ -17,4 +17,4 @@ jobs:
           make
           make -C connect4
           make -C worm
-          c++ -o 15_puzzle/p15 15_puzzle/15Puzzle.cpp
+          c++ -std=c++17 -Wall -Wextra -Werror -o 15_puzzle/p15 15_puzzle/15Puzzle.cpp

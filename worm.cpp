@@ -97,7 +97,7 @@ Cell Worm::moveSnake(int row, int column)
   
 }
 
-Cell Worm::storeGrowth(int randomMunchieSize)
+void Worm::storeGrowth(int randomMunchieSize)
 {
   addSize += randomMunchieSize; 	
 }
@@ -109,9 +109,7 @@ bool Worm::isGrowing()
 
 bool Worm::outOfBounds(int row, int column, int head)
 {
-  
-
-
+  return false;  // never written or called; kept so the header still matches
 }
 
 void Worm::print_Screen()
@@ -177,8 +175,6 @@ bool Worm::RunWorm(int bRow, int bColumn)
 
   //store tail Cords into emptail
   Cell temptail;
-  int previousTailx = temptail.x;
-  int previousTaily = temptail.y;
 
   refresh();
 
@@ -270,7 +266,7 @@ bool Worm::RunWorm(int bRow, int bColumn)
   while (get_char() != ' ');
   //end the curses to screen
   terminate();
-  
+  return true;
 }
 
 
