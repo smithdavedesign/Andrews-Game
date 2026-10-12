@@ -1,0 +1,9 @@
+# build output
+*.o
+*.x
+a.out
+15_puzzle/p15
+# written by the worm game at run time
+log.txt
+output.txt
+.DS_Store
