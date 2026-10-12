@@ -39,8 +39,10 @@ private:
     brd[x + y * 4] = 0;
   }
   void getCandidates( std::vector<int>& v ) {
-    if( x < 3 ) v.push_back( 2 ); if( x > 0 ) v.push_back( 8 );
-    if( y < 3 ) v.push_back( 4 ); if( y > 0 ) v.push_back( 1 );
+    if( x < 3 ) v.push_back( 2 );
+    if( x > 0 ) v.push_back( 8 );
+    if( y < 3 ) v.push_back( 4 );
+    if( y > 0 ) v.push_back( 1 );
   }
   void drawBrd() {
     int r; std::cout << "\n\n";
@@ -88,7 +90,7 @@ private:
   }
   int brd[16], x, y;
 };
-int main( int argc, char* argv[] ) {
+int main() {
   srand( ( unsigned )time( 0 ) );
   p15 p; p.play(); return 0;
 }
