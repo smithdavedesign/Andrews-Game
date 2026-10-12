@@ -158,8 +158,8 @@ bool Connect::winner_Check()
 	   }
        } 
 
-   int xcounter = 1;
-   int ocounter = 1;
+   xcounter = 1;
+   ocounter = 1;
    //across
    for(int i = 0; i < 7; i++)
      for(int j = 0; j < 7; j++)

@@ -30,7 +30,7 @@ int main(int argc, char **argv)
   int bRow = atoi(argv[1]);
   if(bRow <10 || bRow > 25)
      {
-      std::cout<<"out of bounds please enter a row between 10 25" << std::cout;
+      std::cout<<"out of bounds please enter a row between 10 25" << std::endl;
       return 1;
     }
    

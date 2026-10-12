@@ -3,7 +3,7 @@
 
 using namespace std;
 
-main()
+int main()
 {
   Connect * c = new Connect();
   c->connect_Game();
